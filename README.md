@@ -14,7 +14,7 @@
 # 下载所有文件
 将ucenter_api/main_config/config.yml文件中的*号参数更新为实际配置。
 
-# 创建ucenter_api镜像
+# 创建ucenter_api镜像(也可以直接拉取镜像，参加下方)
 创建镜像命令，通过windows命令行，进入ucenter_api目录(Dockerfile所在文件夹)。
 
 例如：
@@ -23,6 +23,10 @@
 执行下面命令, ryanlll3/ucenter_api:1.0可以替换成自己的docker hub仓库与版本号，不影响使用。
 
 `docker build --tag ryanlll3/ucenter_api:1.0 .`
+
+# 拉取ucenter_api镜像
+
+`docker pull ryanlll3/ucenter_api`
 
 # 启动镜像
 ## 启动方式1：通过windows cmd或powershell，linux bash
