@@ -1,0 +1,57 @@
+# Variables will be used by python scripts
+NAME: U-Center2.0 API Configuration
+Version: OMD - Open Monitoring Distribution Version 1.6.0p18.cre
+DESCRIPTION: 本应用为解析H3C U-Center2.0 API，以获取数据并存入MYSQL，最终使用GRAFANA呈现。
+
+# Copy below lines to add more，when you are adding more columns,
+# e.g. COLUMN4, please modify the columns list in the related script, e.g. CI_Type.py, it has only 3 columns.
+NEW_PATH:
+      HTTP_METHOD: ''
+      BASE_PATH: ''
+      REQUEST_PATH: ''
+      TABLE: ''
+      COLUMN1: ''
+      COLUMN2: ''
+      COLUMN3: ''
+
+IOM_DEV_LIST:
+      HTTP_METHOD: 'POST'
+      BASE_PATH: '/apmrs'
+      REQUEST_PATH: '/v2/applications'
+      TABLE: 'IOM_Dev_List'
+      COLUMN1: 'monitor_id'
+      COLUMN2: 'name'
+      COLUMN3: 'ip'
+      COLUMN4: 'appType'
+      COLUMN5: 'oneCategoryStr'
+      COLUMN6: 'available'
+      COLUMN7: 'health'
+      COLUMN8: 'loaded_time'
+
+IOM_Linux_OS_REALTIME:
+      HTTP_METHOD: 'POST'
+      BASE_PATH: '/apmrs'
+      REQUEST_PATH: '/v2/applications/current'
+      TABLE: 'IOM_Linux_OS_RealTime'
+      COLUMN1: 'monitor_id'
+      COLUMN2: 'appType'
+      COLUMN3: 'Memory_Utilization'
+      COLUMN4: 'CPU_Utilization'
+      COLUMN5: 'Disk_Utilization'
+      COLUMN6: 'loaded_time'
+
+IOM_Linux_OS_List:
+      HTTP_METHOD: 'POST'
+      BASE_PATH: '/apmrs'
+      REQUEST_PATH: '/v2/applications'
+      TABLE: 'IOM_Linux_OS_List'
+      COLUMN1: 'monitor_id'
+      COLUMN2: 'name'
+      COLUMN3: 'ip'
+      COLUMN4: 'appType'
+      COLUMN5: 'oneCategoryStr'
+      COLUMN6: 'available'
+      COLUMN7: 'health'
+      COLUMN8: 'loaded_time'
+
+

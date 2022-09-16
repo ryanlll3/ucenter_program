@@ -1,0 +1,30 @@
+# Variables will be used by python scripts
+NAME: U-Center2.0 API Configuration
+Version: OMD - Open Monitoring Distribution Version 1.6.0p18.cre
+DESCRIPTION: 本应用为解析H3C U-Center2.0 API，以获取数据并存入MYSQL，最终使用GRAFANA呈现。
+
+# Copy below lines to add more，when you are adding more columns,
+# e.g. COLUMN4, please modify the columns list in the related script, e.g. CI_Type.py, it has only 3 columns.
+NEW_PATH:
+      HTTP_METHOD: ''
+      BASE_PATH: ''
+      REQUEST_PATH: ''
+      TABLE: ''
+      COLUMN1: ''
+      COLUMN2: ''
+      COLUMN3: ''
+
+Active_Alarms_Count:
+      HTTP_METHOD: 'POST'
+      BASE_PATH: ''
+      REQUEST_PATH: '/alarmrs//fullFault/countByResKeySeverity'
+      TABLE: 'Active_Alarms_Count'
+      COLUMN1: 'monitor_id'
+      COLUMN2: 'severity_1'
+      COLUMN3: 'severity_2'
+      COLUMN4: 'severity_3'
+      COLUMN5: 'severity_4'
+      COLUMN6: 'severity_5'
+      COLUMN7: 'loaded_time'
+
+

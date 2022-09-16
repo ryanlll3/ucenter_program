@@ -1,0 +1,20 @@
+# Variables will be used by python scripts
+NAME: U-Center2.0 API Configuration
+Version:
+DESCRIPTION: 本应用为解析H3C U-Center2.0 API，以获取数据并存入MYSQL，最终使用GRAFANA呈现。请参见README文档更新*号配置参数。
+
+UCENTER_HOST:
+      UCENTER_API_URL: 'http://***.***.***.***:30000'
+      USER: '***'
+      PASSWORD: '***'
+
+MYSQL_DB:
+      DB_HOST: '***.***.***.***'
+      DB_PORT: 33060
+      DB_USER: 'root'
+      DB_PASS: 'root123'
+      DATABASE: 'u_center'
+      DB_CONN_CHAR: 'utf8'
+
+RELOADING_INTERVAL:
+      SECONDS: 1800

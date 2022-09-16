@@ -1,0 +1,47 @@
+# Variables will be used by python scripts
+NAME: U-Center2.0 API Configuration
+Version: OMD - Open Monitoring Distribution Version 1.6.0p18.cre
+DESCRIPTION: 本应用为解析H3C U-Center2.0 API，以获取数据并存入MYSQL，最终使用GRAFANA呈现。
+
+# Copy below lines to add more，when you are adding more columns,
+# e.g. COLUMN4, please modify the columns list in the related script, e.g. CI_Type.py, it has only 3 columns.
+NEW_PATH:
+      HTTP_METHOD: ''
+      BASE_PATH: ''
+      REQUEST_PATH: ''
+      TABLE: ''
+      COLUMN1: ''
+      COLUMN2: ''
+      COLUMN3: ''
+
+CI_Types:
+      HTTP_METHOD: 'GET'
+      BASE_PATH: '/cmdbrs'
+      REQUEST_PATH: '/cmdb/ciType'
+      TABLE: 'CI_Types'
+      COLUMN1: 'typeCode'
+      COLUMN2: 'CI_Type'
+      COLUMN3: 'loaded_time'
+
+RE_Types:
+      HTTP_METHOD: 'GET'
+      BASE_PATH: '/cmdbrs'
+      REQUEST_PATH: '/cmdb/relation'
+      TABLE: 'RE_Types'
+      COLUMN1: 'RE_Name'
+      COLUMN2: 'creator'
+      COLUMN3: 'loaded_time'
+
+CI_Lists:
+      HTTP_METHOD: 'POST'
+      BASE_PATH: '/cmdbrs'
+      REQUEST_PATH: '/cmdb/ci/simpleQueryCi'
+      TABLE: 'CI_Lists'
+      COLUMN1: 'id'
+      COLUMN2: 'CI_Name'
+      COLUMN3: 'CI_IP'
+      COLUMN4: 'typeCode'
+      COLUMN5: 'typeName'
+      COLUMN6: 'location'
+      COLUMN7: 'monitor_id'
+      COLUMN8: 'loaded_time'
