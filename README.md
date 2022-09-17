@@ -21,9 +21,9 @@ see [https://github.com/ryanlll3/ucenter_program](https://github.com/ryanlll3/uc
 例如：
 `cd D:\ryan\ucenter_program\ucenter_api`
 
-执行下面命令, ryanlll3/ucenter_api:1.0可以替换成自己的docker hub仓库与版本号，不影响使用。
+执行下面命令, ryanlll3/ucenter_api:1.3可以替换成自己的docker hub仓库与版本号，不影响使用。
 
-`docker build --tag ryanlll3/ucenter_api:1.0 .`
+`docker build --tag ryanlll3/ucenter_api:1.3 .`
 
 # 拉取ucenter_api镜像
 
@@ -37,7 +37,7 @@ see [https://github.com/ryanlll3/ucenter_program](https://github.com/ryanlll3/uc
 
 ## 启动方式2：通过Docker Desktop启动镜像
 
-通过Docker Desktop，下载ucenter_api：1.0镜像
+通过Docker Desktop，下载ryanlll3/ucenter_api镜像
 通过桌面端运行镜像：
 - 添加Volumes，将前面host的路径选择本地/ucenter_api/main_config文件夹，后边容器的路径选择/opt/ucenter_api/main_config；这样可以通过修改本地ucenter_api_config文件夹中的配置文件，来更新已经创建好的镜像中的配置参数。
 - 添加环境变量，左边填入TZ，右边填入Asia/Shanghai。
