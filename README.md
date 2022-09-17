@@ -1,4 +1,5 @@
 # U-CENTER2.0 API PLAYBOOK
+see [https://github.com/ryanlll3/ucenter_program](https://github.com/ryanlll3/ucenter_program) for full codes
 
 欢迎阅读ucenter_api使用指南，欢迎优化建议与二次开发分享。
 # 注意事项与文件注释
@@ -28,7 +29,7 @@
 ## 启动方式1：通过windows cmd或powershell，linux bash
 启动容器,并挂载目录，方便修改配置文件中的数据库IP，将"D:\ryan\ucenter_program\ucenter_api\main_config"换成本地电脑配置文件所在目录，配置文件名与格式必须与当前ucenter_api/main_config/config.yml保持一致。
 
-`docker run --name ucenter_api -e TZ=Asia/Shanghai -v D:\ryan\ucenter_program\ucenter_api\main_config:/opt/ucenter_api/main_config -d ryanlll3/ucenter_api:1.2`
+`docker run --name ucenter_api -e TZ=Asia/Shanghai -v D:\ryan\ucenter_program\ucenter_api\main_config:/opt/ucenter_api/main_config -d ryanlll3/ucenter_api:1.3`
 
 ## 启动方式2：通过Docker Desktop启动镜像
 
